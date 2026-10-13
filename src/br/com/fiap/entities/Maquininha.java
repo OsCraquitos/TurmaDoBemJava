@@ -49,10 +49,9 @@ public class Maquininha {
 
     @Override
     public String toString() {
-        return "Maquininha{" +
-                "numeroSerie='" + numeroSerie + '\'' +
-                ", status='" + status + '\'' +
-                ", Parceiro=" + Parceiro +
-                '}';
+        return "\n\nMAQUININHA" +
+                "\nNumero Serie='" + numeroSerie  +
+                "\nStatus='" + status  +
+                "\nParceiro=" + Parceiro ;
     }
 }

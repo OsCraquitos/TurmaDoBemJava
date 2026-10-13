@@ -76,13 +76,12 @@ public class PessoaFisica {
     // METODO ToString
     @Override
     public String toString() {
-        return "PessoaFisica{" +
-                "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", dataNascimento='" + dataNascimento + '\'' +
-                ", email='" + email + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", endereco=" + endereco +
-                '}';
+        return "\n\nPESSOA FISICA" +
+                "\nNome: " + nome +
+                "\nCPF: " + cpf +
+                "\nData de Nascimento:  " + dataNascimento +
+                "\nEmail:  " + email +
+                "\nTelefone:  " + telefone + "\n" + endereco
+                ;
     }
 }

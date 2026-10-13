@@ -4,7 +4,7 @@ public class Endereco {
 
     // visibilidade, tipo de dados e atributo
     private String logradouro;
-    private String numero;
+    private int numero;
     private String complemento;
     private String cep;
     private String bairro;
@@ -16,7 +16,7 @@ public class Endereco {
     }
 
     // metodo construtor com parametro cheio
-    public Endereco(String logradouro, String numero, String complemento, String cep, String bairro, String cidade, String estado) {
+    public Endereco(String logradouro, int numero, String complemento, String cep, String bairro, String cidade, String estado) {
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
@@ -34,11 +34,11 @@ public class Endereco {
         this.logradouro = logradouro;
     }
 
-    public String getNumero() {
+    public int getNumero() {
         return numero;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
@@ -84,14 +84,13 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "Endereco{" +
-                "logradouro='" + logradouro + '\'' +
-                ", numero='" + numero + '\'' +
-                ", complemento='" + complemento + '\'' +
-                ", cep='" + cep + '\'' +
-                ", bairro='" + bairro + '\'' +
-                ", cidade='" + cidade + '\'' +
-                ", estado='" + estado + '\'' +
-                '}';
+        return  "Logradouro: " + logradouro +
+                "\nNumero: " + numero +
+                "\nComplemento: " + complemento  +
+                "\nCEP: " + cep +
+                "\nBairro: " + bairro +
+                "\nCidade: " + cidade  +
+                "\nEstado: " + estado
+                ;
     }
 }

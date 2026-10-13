@@ -46,10 +46,10 @@ public class Transacao {
     // METODO TOSTRING
     @Override
     public String toString() {
-        return "Transacao{" +
-                "valor=" + valor +
-                ", dataHora='" + dataHora + '\'' +
-                ", maquininha=" + maquininha +
-                '}';
+        return "\n\nTRANSACAO" +
+                "\nValor: " + valor +
+                "\nData e Hora: " + dataHora +
+                "\nMaquininha: " + maquininha
+                ;
     }
 }

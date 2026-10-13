@@ -66,12 +66,11 @@ public class PessoaJuridica {
     // METODO TOSTRING
     @Override
     public String toString() {
-        return "PessoaJuridica{" +
-                "cnpj='" + cnpj + '\'' +
-                ", razaoSocial='" + razaoSocial + '\'' +
-                ", email='" + email + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", endereco=" + endereco +
-                '}';
+        return "\n\nPESSOA JURIDICA" +
+                "\nCNPJ: " + cnpj +
+                "\nRazão Social: " + razaoSocial +
+                "\nEmail: " + email +
+                "\nTelefone: " + telefone + "\n" + endereco
+                ;
     }
 }

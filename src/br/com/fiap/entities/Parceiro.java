@@ -76,13 +76,11 @@ public class Parceiro {
     // METODO ToString
     @Override
     public String toString() {
-        return "Parceiro{" +
-                "nome='" + nome + '\'' +
-                ", cnpj='" + cnpj + '\'' +
-                ", tipoParceria='" + tipoParceria + '\'' +
-                ", dataInicioParceria='" + dataInicioParceria + '\'' +
-                ", percentualRepasse=" + percentualRepasse +
-                ", endereco=" + endereco +
-                '}';
+        return "\n\nPARCEIRO\n" +
+                "\nNome: " + nome +
+                "\nCNPJ: " + cnpj +
+                "\nTipo da Parceria: " + tipoParceria +
+                "\nData de Inicio da Parceria: " + dataInicioParceria +
+                "\nPercentual de Repasse: " + percentualRepasse + "\n" + endereco;
     }
 }

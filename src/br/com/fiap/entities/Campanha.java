@@ -78,14 +78,13 @@ public class Campanha {
 
     @Override
     public String toString() {
-        return "Campanha{" +
-                "idCampanha=" + idCampanha +
-                ", nome='" + nome + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", dataInicio='" + dataInicio + '\'' +
-                ", dataFim='" + dataFim + '\'' +
-                ", metaArrecadacao=" + metaArrecadacao +
-                '}';
+        return "\n\nCAMPANHA:\n" +
+                "\nID da Campanha: " + idCampanha +
+                "\nNome: " + nome +
+                "\nDescrição: " + descricao +
+                "\nData de inicio: " + dataInicio +
+                "\nData de fim: " + dataFim +
+                "\nMeta de Arrecadação: " + metaArrecadacao;
     }
 }
 
