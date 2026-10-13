@@ -62,12 +62,8 @@ public class Contribuicao {
 
     @Override
     public String toString() {
-        return "Contribuicao{" +
-                "valor=" + valor +
-                ", dataHora='" + dataHora + '\'' +
-                ", pessoaFisica=" + pessoaFisica +
-                ", pessoaJuridica=" + pessoaJuridica +
-                ", transacao=" + transacao +
-                '}';
+        return "\n\nCONTRIBUICAO" +
+                "\nValor: " + valor +
+                "\nData e Hora: " + dataHora + pessoaFisica + pessoaJuridica + transacao;
     }
 }

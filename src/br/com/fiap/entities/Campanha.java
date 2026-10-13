@@ -13,10 +13,12 @@ public class Campanha {
     // metodo construtor com parametro vazio
 
     public Campanha() {
+
+        // metodo construtor com parametro cheio
     }
 
-    // metodo construtor com parametro cheio
-    public Campanha(int idCampanha, String nome, String descricao, String dataInicio, String dataFim, double metaArrecadacao) {
+    public Campanha(int idCampanha, String nome, String descricao, String dataInicio, String dataFim,
+            double metaArrecadacao) {
         this.idCampanha = idCampanha;
         this.nome = nome;
         this.descricao = descricao;
@@ -78,7 +80,7 @@ public class Campanha {
 
     @Override
     public String toString() {
-        return "\n\nCAMPANHA:\n" +
+        return "\n\nCAMPANHA:" +
                 "\nID da Campanha: " + idCampanha +
                 "\nNome: " + nome +
                 "\nDescrição: " + descricao +
@@ -87,6 +89,3 @@ public class Campanha {
                 "\nMeta de Arrecadação: " + metaArrecadacao;
     }
 }
-
-
-

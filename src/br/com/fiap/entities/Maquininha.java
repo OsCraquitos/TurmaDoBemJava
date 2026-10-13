@@ -50,8 +50,7 @@ public class Maquininha {
     @Override
     public String toString() {
         return "\n\nMAQUININHA" +
-                "\nNumero Serie='" + numeroSerie  +
-                "\nStatus='" + status  +
-                "\nParceiro=" + Parceiro ;
+                "\nNumero Serie: " + numeroSerie +
+                "\nStatus: " + status + Parceiro;
     }
 }

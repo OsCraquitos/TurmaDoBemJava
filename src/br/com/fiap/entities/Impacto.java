@@ -57,11 +57,9 @@ public class Impacto {
 
     @Override
     public String toString() {
-        return "Impacto{" +
-                "descricao='" + descricao + '\'' +
-                ", quantidadeBeneficiados=" + quantidadeBeneficiados +
-                ", dataRegistro='" + dataRegistro + '\'' +
-                ", campanha=" + campanha +
-                '}';
+        return "\n\nIMPACTO" +
+                "\nDescrição: " + descricao +
+                "\nQuantidade de Beneficiados: " + quantidadeBeneficiados +
+                "\nData de Registro: " + dataRegistro + campanha;
     }
 }

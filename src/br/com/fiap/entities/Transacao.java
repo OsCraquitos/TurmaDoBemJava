@@ -7,7 +7,6 @@ public class Transacao {
     private String dataHora;
     private Maquininha maquininha;
 
-
     // METODO CONSTRUTOR COM PARAMETRO VAZIO
     public Transacao() {
     }
@@ -42,14 +41,11 @@ public class Transacao {
         this.maquininha = maquininha;
     }
 
-
     // METODO TOSTRING
     @Override
     public String toString() {
         return "\n\nTRANSACAO" +
                 "\nValor: " + valor +
-                "\nData e Hora: " + dataHora +
-                "\nMaquininha: " + maquininha
-                ;
+                "\nData e Hora: " + dataHora + maquininha;
     }
 }

@@ -10,13 +10,13 @@ public class Parceiro {
     private double percentualRepasse;
     private Endereco endereco;
 
-
     // METODO CONSTRUTOR COM PARAMETRO VAZIO
     public Parceiro() {
     }
 
     // METODO CONSTRUTOR COM PARAMETRO CHEIO, SEM ATRIBUTO DE REFERENCIA
-    public Parceiro(String nome, String cnpj, String tipoParceria, String dataInicioParceria, double percentualRepasse) {
+    public Parceiro(String nome, String cnpj, String tipoParceria, String dataInicioParceria,
+            double percentualRepasse) {
         this.nome = nome;
         this.cnpj = cnpj;
         this.tipoParceria = tipoParceria;
@@ -76,7 +76,7 @@ public class Parceiro {
     // METODO ToString
     @Override
     public String toString() {
-        return "\n\nPARCEIRO\n" +
+        return "\n\nPARCEIRO" +
                 "\nNome: " + nome +
                 "\nCNPJ: " + cnpj +
                 "\nTipo da Parceria: " + tipoParceria +
