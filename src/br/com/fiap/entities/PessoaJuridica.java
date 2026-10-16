@@ -1,13 +1,11 @@
 package br.com.fiap.entities;
 
-public class PessoaJuridica {
+public class PessoaJuridica extends Pessoa{
 
     // VISIBILIDADE, TIPOS DE DADOS E ATRIBUTOS
     private String cnpj;
     private String razaoSocial;
-    private String email;
-    private String telefone;
-    private Endereco endereco;
+    private String nomeFantasia;
 
 
     // METODO CONSTRUTOR COM PARAMETRO VAZIO
@@ -15,13 +13,14 @@ public class PessoaJuridica {
     }
 
     // METODO CONSTRUTOR COM PARAMETRO CHEIO, SEM ATRIBUTO DE REFERENCIA
-    public PessoaJuridica(String cnpj, String razaoSocial, String email, String telefone) {
+    public PessoaJuridica(String nome, String email, String telefone, String dataNascimento, String cnpj, String razaoSocial, String nomeFantasia) {
+        super(nome, email, telefone, dataNascimento);
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
-        this.email = email;
-        this.telefone = telefone;
+        this.nomeFantasia = nomeFantasia;
     }
 
+    // METODOS GETTERS E SETTERS
     public String getCnpj() {
         return cnpj;
     }
@@ -38,39 +37,26 @@ public class PessoaJuridica {
         this.razaoSocial = razaoSocial;
     }
 
-    public String getEmail() {
-        return email;
+    public String getNomeFantasia() {
+        return nomeFantasia;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setNomeFantasia(String nomeFantasia) {
+        this.nomeFantasia = nomeFantasia;
     }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
 
     // METODO TOSTRING
     @Override
     public String toString() {
         return "\n\nPESSOA JURIDICA" +
-                "\nCNPJ: " + cnpj +
-                "\nRazão Social: " + razaoSocial +
-                "\nEmail: " + email +
-                "\nTelefone: " + telefone + "\n" + endereco
+                "\ncnpj=" + cnpj +
+                "\nrazaoSocial=" + razaoSocial +
+                "\nnomeFantasia=" + nomeFantasia +
+                "\nnome=" + nome +
+                "\nemail=" + email +
+                "\ntelefone=" + telefone +
+                "\ndataNascimento=" + dataNascimento +
+                "\nendereco: \n" + endereco
                 ;
     }
 }

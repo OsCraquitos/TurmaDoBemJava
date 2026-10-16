@@ -38,7 +38,7 @@ public class Sistema {
         // dataFim, double metaArrecadacao
         Campanha objCampanha = new Campanha(
                 20,
-                texto("Nome da Campanha"),
+                "Campanha do Jonatas",
                 "A melhor campanha de todas",
                 "12/10/2026",
                 "01/11/2026",
@@ -66,22 +66,25 @@ public class Sistema {
         // Setar objeto referencia de Parceiro (Endereco)
         objParceiro.setEndereco(objEndereco);
 
-        // String nome, String cpf, String dataNascimento, String email, String telefone
+        // String nome, String email, String telefone, String dataNascimento, String cpf
         PessoaFisica objPessoaFisica = new PessoaFisica(
                 "Jonatas Pessoa Fisica",
-                "3213213231",
-                "07/04/2007",
+                "jonatasfisica@gmail.com",
+                "(11) 32131-4314",
                 "jonatas@gmail.com",
-                "(11) 32321-2356");
+                "543.213.543-54");
         // Setar objeto referencia de PessoaFisica (Endereco)
         objPessoaFisica.setEndereco(objEndereco);
 
-        // String cnpj, String razaoSocial, String email, String telefone
+        // String nome, String email, String telefone, String dataNascimento, String cnpj, String razaoSocial, String nomeFantasia
         PessoaJuridica objPessoaJuridica = new PessoaJuridica(
+                "Jonatas Juridico",
+                "jonatasjuridico@gmail.com",
+                "(11) 32132-1245",
+                "07/04/2007",
                 "47.940.087/0001-40",
                 "Vendas",
-                "jonatas2@gmail.com",
-                "(11) 431245-3213");
+                "Jontas Corporation");
         // Setar objeto referencia de PessoaJuridica (Endereco)
         objPessoaJuridica.setEndereco(objEndereco);
 
@@ -130,7 +133,7 @@ public class Sistema {
         // objImpacto + "" + objContribuicao);
 
         // System.out.println(objCampanha + "" + objImpacto + "" + objContribuicao);
-        System.out.println("\n" +objImpacto + "" + objContribuicao);
+        System.out.println(objImpacto + "" + objContribuicao);
 
     }
 }
